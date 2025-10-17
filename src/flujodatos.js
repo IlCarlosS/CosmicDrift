@@ -1,9 +1,9 @@
 const canvas = document.getElementById('spaceCanvas');
 const ctx = canvas.getContext('2d');
 const ufoImg = new Image();
-ufoImg.src = '../img/asset/ufo.svg';
+ufoImg.src = '/img/asset/ufo.svg';
 const rocketImg = new Image();
-rocketImg.src = '../img/asset/jetpack.svg';
+rocketImg.src = '/img/asset/jetpack.svg';
 // Tamaño del jugador y enemigos
 const playerWidth = 50;
 const playerHeight = 30;
@@ -204,10 +204,10 @@ function drawEndMessage() {
 }
 
 //musica
-const bgMusic = new Audio('../img/asset/Overboard - The Grey Room _ Golden Palms.mp3');
+const bgMusic = new Audio('/img/asset/Overboard - The Grey Room _ Golden Palms.mp3');
 bgMusic.loop = true;
 bgMusic.volume = 0.4;
-const alertMusic = new Audio('../img/asset/Nebula - The Grey Room _ Density & Time.mp3');
+const alertMusic = new Audio('/img/asset/Nebula - The Grey Room _ Density & Time.mp3');
 alertMusic.volume= 0.4;
 
 //game over
