@@ -188,7 +188,7 @@ h1, h2, h3 {
 
 .cosmic-drift-graphic {
     /* Simulación del remolino central */
-    background: radial-gradient(circle at center, rgba(255, 0, 51, 0.4) 0%, rgba(255, 0, 51, 0) 60%), url('img/cosmicdift.png');
+    background: radial-gradient(circle at center, rgba(255, 0, 51, 0.4) 0%, rgba(255, 0, 51, 0) 60%), url('../img/cosmicdift.png');
     background-size: cover;
     background-position: center;
     width: 100%;

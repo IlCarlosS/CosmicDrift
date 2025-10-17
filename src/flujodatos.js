@@ -1,9 +1,9 @@
 const canvas = document.getElementById('spaceCanvas');
 const ctx = canvas.getContext('2d');
 const ufoImg = new Image();
-ufoImg.src = 'img/asset/ufo.svg';
+ufoImg.src = '../img/asset/ufo.svg';
 const rocketImg = new Image();
-rocketImg.src = 'img/asset/jetpack.svg';
+rocketImg.src = '../img/asset/jetpack.svg';
 // Tamaño del jugador y enemigos
 const playerWidth = 50;
 const playerHeight = 30;
@@ -84,6 +84,15 @@ function updatePlayer() {
   }
 }
 
+// Eventos de teclado
+document.addEventListener('keydown', e => {
+  keys[e.key] = true;
+  if (e.key.toLowerCase() === 'z') shoot();
+});
+document.addEventListener('keyup', e => {
+  keys[e.key] = false;
+});
+
 // Disparo
 let lastShotTime = 0;
 const shotCooldown = 700; // milisegundos 
@@ -99,7 +108,6 @@ function shoot() {
 }
 
 let enemyDirection = 1; // 1 = derecha, -1 = izquierda
-
 function updateEnemies() {
   let edgeReached = false;
 
@@ -179,41 +187,58 @@ function checkEnemyCollisionWithPlayer() {
   });
 }
 
+//mensaje
+let gameState = 'idle';// 'idle', 'running', 'ended'
+let endMessage = "";
+function drawEndMessage() {
+  ctx.fillStyle = 'rgba(0, 0, 0, 0.8)';
+  ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+  ctx.fillStyle = '#FF0033';
+  ctx.font = 'bold 32px Space Mono';
+  ctx.textAlign = 'center';
+  ctx.fillText(endMessage, canvas.width / 2, canvas.height / 2 - 20);
+
+  ctx.font = '20px Space Mono';
+  ctx.fillText("Haz clic para reiniciar", canvas.width / 2, canvas.height / 2 + 30);
+}
+
 //musica
-const bgMusic = new Audio('img/asset/Overboard - The Grey Room _ Golden Palms.mp3');
+const bgMusic = new Audio('../img/asset/Overboard - The Grey Room _ Golden Palms.mp3');
 bgMusic.loop = true;
 bgMusic.volume = 0.4;
-const alertMusic = new Audio('img/asset/Nebula - The Grey Room _ Density & Time.mp3');
+const alertMusic = new Audio('../img/asset/Nebula - The Grey Room _ Density & Time.mp3');
 alertMusic.volume= 0.4;
+
+//game over
+function gameOver() {
+  gameState = 'ended';
+  bgMusic.pause();
+  bgMusic.currentTime = 0;
+  alertMusic.play();
+  endMessage = "¡Has sido destruido!";
+  drawEndMessage();
+}
 
 //victoria
 function checkVictory() {
   const allDead = enemies.every(enemy => !enemy.alive);
   if (allDead) {
+    gameState = 'ended';
     bgMusic.pause();
     bgMusic.currentTime = 0;
     alertMusic.play();
-    setTimeout(() => {
-      alert("¡Felicidades! Has detenido la invasión.");
-      alertMusic.pause();
-      alertMusic.currentTime = 0;
-      document.location.reload();
-    }, 100); // pequeña pausa para evitar conflicto visual
+    endMessage = "¡Felicidades! Has detenido la invasión.";
+    drawEndMessage();
   }
-}
-
-function gameOver() {
-  bgMusic.pause();
-  bgMusic.currentTime = 0;
-  alertMusic.play();
-  alert("¡Has sido destruido! Misión fallida");
-  alertMusic.pause();
-  alertMusic.currentTime = 0;
-  document.location.reload(); // reinicia el juego
 }
 
 // Loop principal
 function gameLoop() {
+  if (gameState !== 'running') {
+    drawEndMessage(); // asegura que el mensaje se mantenga visible
+    return; // detiene el loop
+  }
   ctx.clearRect(0, 0, canvas.width, canvas.height);
   updatePlayer();
   updateBullets();
@@ -229,25 +254,22 @@ function gameLoop() {
   requestAnimationFrame(gameLoop);
 }
 
-// Eventos de teclado
-document.addEventListener('keydown', e => {
-  keys[e.key] = true;
-  if (e.key.toLowerCase() === 'z') shoot();
-});
-document.addEventListener('keyup', e => {
-  keys[e.key] = false;
-});
-
 // Iniciar juego
 let gameStarted = false;
 canvas.addEventListener('click', () => {
-  if (!gameStarted) {
+  if (gameState === 'idle') {
     gameStarted = true;
     startGame();
+  } else if (gameState === 'ended') {
+    alertMusic.pause();
+    alertMusic.currentTime = 0;
+    document.location.reload();
   }
 });
 
 function startGame() {
+  if (gameState !== 'idle') return;
+  gameState = 'running';
   spawnEnemies();
   bgMusic.play();
   gameLoop();
