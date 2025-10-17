@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="img/favicon_io/favicon.ico">
+    <title>Cosmic Drift - Explora lo Desconocido</title>
+    <link rel="stylesheet" href="src/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="starfield"></div> 
+    <!-- Header -->
+    <header class="header">
+        <div class="logo">COSMIC DRIFT</div>
+        <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-menu-2"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 6l16 0" /><path d="M4 12l16 0" /><path d="M4 18l16 0" /></svg>
+        </button>
+        <nav class="navbar" id="main-navbar">
+            <ul>
+                <li><a href="index.html">INICIO</a></li>
+                <li><a href="articulos.html">BITÁCORA ESTELAR</a></li>
+                <li><a href="galeria.html">GALERÍA</a></li>
+                <li><a href="flujodatos.html">FLUJO DE DATOS</a></li>
+                <li><a href="comunidad.html">COMUNIDAD</a></li>
+                <li><a href="manifiesto.html">MANIFIESTO</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero -->
+    <main class="hero-section">
+        <div class="hero-content">
+            <p class="tagline">EXPLORA LO DESCONOCIDO</p>
+            <h1 class="ml11">
+                <span class="text-wrapper">
+                    <span class="line line1"></span>
+                    <span class="letters">SUMÉRGETE EN <br>EL ABISMO DEL UNIVERSO</span>
+                </span>
+            </h1>
+            <p class="subtitle">Donde la ciencia se encuentra con el terror sublime del cosmos.</p>
+            <a href="#chronicles-section" class="btn-primary">COMIENZA TU VIAJE</a>
+        </div>
+
+        <div class="hero-image-and-sidebar">
+            <div class="hero-image-container">
+                <div class="cosmic-drift-graphic"></div>
+            </div>
+
+            <aside class="sidebar">
+                <div class="carousel-container">
+                    <div class="carousel-track" id="sidebar-carousel">
+                        <div class="card-info">
+                            <h3 class="card-title">CHRONO-MINDING</h3>
+                            <p class="card-text">
+                                Los planetas congelados detectados en el sector Z-X continúan expandiéndose. Los sensores registran fluctuaciones de hasta 647 unidades, lo que puede suponer un riesgo a la seguridad.
+                            </p>
+                        </div> 
+                        <div class="card-info">
+                            <h3 class="card-title">ASTRO-FEED</h3>
+                            <p class="card-text">
+                                > MDAO_MSG_025: ERR_NAV_MALFUNCTION <br>
+                                > PROTO_TRANSFER: ACTIVATED <br>
+                                > TRADUCCIÓN ENCRIPTADA
+                            </p>
+                        </div>
+                        <div class="card-info">
+                            <h3 class="card-title">DATOS CRÍPTICOS</h3>
+                            <p class="card-text">
+                                La señal anómala 'K-42' persiste en la banda subespacial. Análisis preliminar sugiere patrones de habla, posiblemente de una civilización pre-colapso.
+                            </p>
+                        </div>
+                        <div class="card-info">
+                            <h3 class="card-title">ANOMALÍA GRAVITACIONAL</h3>
+                            <p class="card-text">
+                                    Se detecta una desviación masiva en la órbita de Júpiter. Origen desconocido. Los protocolos de evacuación Alpha-9 están siendo revisados.
+                            </p>
+                        </div>
+                        <div class="card-info">
+                            <h3 class="card-title">BITÁCORA ENERGÉTICA</h3>
+                            <p class="card-text">
+                                Reporte de consumo anómalo en el Núcleo Gamma. La eficiencia cayó al 45% tras el pico de potencia. Se recomienda una auditoría inmediata del plasma de fusión.
+                            </p>
+                        </div>
+                        <div class="card-info">
+                            <h3 class="card-title">REGISTRO DE RUIDO BLANCO</h3>
+                            <p class="card-text">
+                                El sensor acústico detecta un patrón melódico repetitivo dentro del ruido de fondo galáctico. Se ha etiquetado como "Canto de la Ballena Estelar". Origen: Desconocido.
+                            </p>
+                        </div>
+                        <div class="card-info">
+                            <h3 class="card-title">OBJETO NO IDENTIFICADO</h3>
+                            <p class="card-text">
+                                Se registra un frasco de limones encurtidos con origen terrestre, flotando en el Punto de Lagrange L4. La integridad del sello se mantiene. Se abre debate sobre el protocolo de recuperación.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <!-- Carrusel Frases -->
+    <section class="quote-carousel-section">
+        <div class="quote-carousel-container">
+            <div class="quote-carousel-track" id="quote-carousel-track">
+                <div class="quote-slide" style="background-image: url('img/1.webp');">
+                    <blockquote class="quote-text">
+                        "El cosmos está dentro de nosotros. Estamos hechos de material estelar. Somos una forma de que el universo se conozca a sí mismo."
+                    </blockquote>
+                    <p class="quote-author">— Carl Sagan</p>
+                </div>
+
+                <div class="quote-slide" style="background-image: url('img/2.webp');">
+                    <blockquote class="quote-text">
+                        "Existen dos posibilidades: estamos solos en el universo o no lo estamos. Ambas son igualmente aterradoras."
+                    </blockquote>
+                    <p class="quote-author">— Arthur C. Clarke</p>
+                </div>
+
+                <div class="quote-slide" style="background-image: url('img/3.webp');">
+                    <blockquote class="quote-text">
+                        "Existe un rincón del Universo que puedes estar seguro de mejorar, y es tu propio yo."
+                    </blockquote>
+                    <p class="quote-author">— Aldous Huxley</p>
+                </div>
+
+                <div class="quote-slide" style="background-image: url('img/4.webp');">
+                    <blockquote class="quote-text">
+                        "El silencio eterno de estos espacios infinitos me atemoriza."
+                    </blockquote>
+                    <p class="quote-author">— Blaise Pascal</p>
+                </div>  
+            </div>
+        </div>
+    </section>
+    
+    <!-- Articulos -->
+    <section class="chronicles-section" id="chronicles-section">
+        <h2>BITÁCORA ESTELAR</h2>
+        <p class="community-subtitle">NOVEDADES EN EL COSMOS</p>
+        <div class="articles-container">
+            <article class="article-card">
+                <h3 class="article-title">MISTERIOS DE LA MATERIA OSCURA</h3>
+                <p class="article-excerpt">Exploramos el 85% invisible del universo. ¿Es una fuerza de cohesión o la prueba de dimensiones que aún no podemos percibir?</p>
+                <a href="articulos.html" class="btn-secondary">LEER MÁS</a>
+            </article>
+
+            <article class="article-card">
+                <h3 class="article-title">ARTEFACTOS EXTRATERRESTRES</h3>
+                <p class="article-excerpt">Un análisis de las ruinas dejadas por la civilización Vélian en el Sector E2, y el enigma de su repentina desaparición hace milenios.</p>
+                <a href="articulos.html" class="btn-secondary">LEER MÁS</a>
+            </article>
+
+            <article class="article-card">
+                <h3 class="article-title">NÓMADAS DE LA NEBULOSA</h3>
+                <p class="article-excerpt">Seguimiento a las comunidades interestelares que han renunciado a los planetas fijos, viviendo y navegando perpetuamente dentro de las nubes de gas.</p>
+                <a href="articulos.html" class="btn-secondary">LEER MÁS</a>
+            </article>  
+
+            <article class="article-card">
+                <h3 class="article-title">EL VACÍO ES UN CÓDIGO</h3>
+                <p class="article-excerpt">Descifrando la señal recurrente 0XF5 en la Nube de Oort. Los expertos debaten si se trata de un código binario o de un fenómeno natural anómalo.</p>
+                <a href="articulos.html" class="btn-secondary">LEER MÁS</a>
+            </article>  
+
+            <article class="article-card">
+                <h3 class="article-title">EL COLAPSO DE LA ANTIGUA FEDERACIÓN: LECCIONES PARA LA DERIVA ACTUAL</h3>
+                <p class="article-excerpt">Revisamos los factores internos y externos que llevaron a la caída ¿Estamos destinados a repetir los mismos errores?</p>
+                <a href="articulos.html" class="btn-secondary">LEER MÁS</a>
+            </article>  
+
+            <article class="article-card">
+                <h3 class="article-title">EL NUEVO HORIZONTE: LA VIDA MICROBIANA HALLADA EN EXO-PLANETA T-12.</h3>
+                <p class="article-excerpt">La expedición "Atenea-7" confirma la presencia de vida. Analizamos la química de los nuevos microbios y lo que esto significa para la terraformación.</p>
+                <a href="articulos.html" class="btn-secondary">LEER MÁS</a>
+            </article>  
+        </div>
+        <br>
+        <a href="articulos.html" class="btn-primary">LEER MÁS ARTICULOS...</a><br>
+    </section>
+
+    <!-- CTA Galeria -->
+    <section class="cta-galeria-section">
+        <div class="cta-galeria-content">
+            <h2>EL INFINITO ESPERA. ¿TE ATREVES A MIRAR?</h2>
+            <a href="galeria.html" class="btn-primary">DESCUBRIR EL UNIVERSO</a>
+        </div>
+        
+        <div class="cta-galeria-image-container">
+            <img src="img/2.webp" alt="Imagen del universo o galaxia" class="cta-galeria-image">
+        </div>
+    </section>
+
+    <!-- CTA Flujo de datos -->
+    <section class="cta-datos-section">
+        <div class="terminal-box">
+            <h2 class="terminal-title">ACCESO RESTRINGIDO.</h2>
+            <p class="terminal-line">> INICIANDO PROTOCOLO DE CONEXIÓN... <span class="blinking-cursor">_</span></p>
+            <p class="terminal-prompt">
+                Los datos fluyen, pero la llave es necesaria. ¿Estás listo para descifrar el mensaje?
+            </p>
+            <a href="flujodatos.html" class="btn-primary">INICIAR DESCIFRADO</a>
+        </div>
+    </section>
+
+    <!-- Foro -->
+    <section class="community-section">
+        <h2>COMUNIDAD</h2>
+        <p class="community-subtitle">ÚLTIMOS AVISTAMIENTOS</p>
+        <div class="topics-container">
+            <a href="comunidad.html" class="topic-card">
+                <div class="topic-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-comet"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M15.5 18.5l-3 1.5l.5 -3.5l-2 -2l3 -.5l1.5 -3l1.5 3l3 .5l-2 2l.5 3.5z" /><path d="M4 4l7 7" /><path d="M9 4l3.5 3.5" /><path d="M4 9l3.5 3.5" /></svg>
+                </div>
+                <div class="topic-main-info">
+                    <h3 class="topic-title">¿Es viable la propulsión por agujeros de gusano?</h3>
+                    <p class="topic-meta">
+                        <span class="topic-author">Autor: AstroFan99</span>
+                        <span class="topic-date">Fecha: 24.10.3305</span>
+                    </p>
+                </div>
+                <div class="topic-comments">
+                    <div class="comments-count">14</div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-messages"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M21 14l-3 -3h-7a1 1 0 0 1 -1 -1v-6a1 1 0 0 1 1 -1h9a1 1 0 0 1 1 1v10" /><path d="M14 15v2a1 1 0 0 1 -1 1h-7l-3 3v-10a1 1 0 0 1 1 -1h2" /></svg>
+                </div>
+            </a>
+            <a href="comunidad.html" class="topic-card">
+                <div class="topic-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-planet"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18.816 13.585c-.328 1.488 -.844 2.871 -1.537 4.102c-1.282 2.296 -3.078 4.092 -5.259 4.908c-2.18 -.816 -3.977 -2.612 -5.259 -4.908c-.693 -1.231 -1.209 -2.614 -1.537 -4.102" /><path d="M4.184 10.415c.328 -1.488 .844 -2.871 1.537 -4.102c1.282 -2.296 3.078 -4.092 5.259 -4.908c2.18 .816 3.977 2.612 5.259 4.908c.693 1.231 1.209 2.614 1.537 4.102" /><path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" /><path d="M12 12m-4 0a4 4 0 1 0 8 0a4 4 0 1 0 -8 0" /></svg>
+                </div>
+                <div class="topic-main-info">
+                    <h3 class="topic-title">Reporte de fallas en el Sector Beta 7: ¿Bug o anomalía gravitatoria?</h3>
+                    <p class="topic-meta">
+                        <span class="topic-author">Autor: Sentinel_Prime</span>
+                        <span class="topic-date">Fecha: 23.10.3305</span>
+                    </p>
+                </div>
+                <div class="topic-comments">
+                    <div class="comments-count">48</div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-messages"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M21 14l-3 -3h-7a1 1 0 0 1 -1 -1v-6a1 1 0 0 1 1 -1h9a1 1 0 0 1 1 1v10" /><path d="M14 15v2a1 1 0 0 1 -1 1h-7l-3 3v-10a1 1 0 0 1 1 -1h2" /></svg>
+                    </div>
+            </a>
+            <a href="comunidad.html" class="topic-card">
+                <div class="topic-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-dna"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 3l4 8l-4 8" /><path d="M20 3l-4 8l4 8" /><path d="M7 21l10 -18" /><path d="M13 21l-10 -18" /><path d="M10 21l2 -4" /><path d="M12 7l-2 -4" /></svg>
+                </div>
+                <div class="topic-main-info">
+                    <h3 class="topic-title">La ética de la modificación genética en la exploración de exoplanetas.</h3>
+                    <p class="topic-meta">
+                        <span class="topic-author">Autor: Dr. Elysium</span>
+                        <span class="topic-date">Fecha: 22.10.3305</span>
+                    </p>
+                </div>
+                <div class="topic-comments">
+                    <div class="comments-count">78</div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-messages"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M21 14l-3 -3h-7a1 1 0 0 1 -1 -1v-6a1 1 0 0 1 1 -1h9a1 1 0 0 1 1 1v10" /><path d="M14 15v2a1 1 0 0 1 -1 1h-7l-3 3v-10a1 1 0 0 1 1 -1h2" /></svg>
+                </div>
+            </a>
+            <a href="comunidad.html" class="topic-card">
+                <div class="topic-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-dna"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 3l4 8l-4 8" /><path d="M20 3l-4 8l4 8" /><path d="M7 21l10 -18" /><path d="M13 21l-10 -18" /><path d="M10 21l2 -4" /><path d="M12 7l-2 -4" /></svg>
+                </div>
+                <div class="topic-main-info">
+                    <h3 class="topic-title">¿Alguien más capta interferencias de radiofrecuencia desde Kepler-186f?</h3>
+                    <p class="topic-meta">
+                        <span class="topic-author">Autor: Dr. Elysium</span>
+                        <span class="topic-date">Fecha: 20.09.3305</span>
+                    </p>
+                </div>
+                <div class="topic-comments">
+                    <div class="comments-count">17</div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-messages"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M21 14l-3 -3h-7a1 1 0 0 1 -1 -1v-6a1 1 0 0 1 1 -1h9a1 1 0 0 1 1 1v10" /><path d="M14 15v2a1 1 0 0 1 -1 1h-7l-3 3v-10a1 1 0 0 1 1 -1h2" /></svg>
+                </div>
+            </a>
+        </div>
+        <br>
+        <a href="comunidad.html" class="btn-primary">UNETE A LA COMUNIDAD...</a>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="footer-content">
+            <div class="logo">COSMIC DRIFT</div>
+            <nav class="footer-navbar">
+                <ul>
+                    <li><a href="index.html">INICIO</a></li>
+                    <li><a href="articulos.html">BITÁCORA ESTELAR</a></li>
+                    <li><a href="galeria.html">GALERÍA</a></li>
+                    <li><a href="flujodatos.html">FLUJO DE DATOS</a></li>
+                    <li><a href="comunidad.html">COMUNIDAD</a></li>
+                    <li><a href="manifiesto.html">MANIFIESTO</a></li>
+                </ul>
+            </nav>
+            <div class="ufo-animation-container">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-ufo footer-ufo-icon"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M16.95 9.01c3.02 .739 5.05 2.123 5.05 3.714c0 2.367 -4.48 4.276 -10 4.276s-10 -1.909 -10 -4.276c0 -1.59 2.04 -2.985 5.07 -3.724" /><path d="M7 9c0 1.105 2.239 2 5 2s5 -.895 5 -2v-.035c0 -2.742 -2.239 -4.965 -5 -4.965s-5 2.223 -5 4.965v.035" /><path d="M15 17l2 3" /><path d="M8.5 17l-1.5 3" /><path d="M12 14h.01" /><path d="M7 13h.01" /><path d="M17 13h.01" /></svg>
+            </div>
+        </div>
+        <p class="footer-copy">&copy; 3305 Cosmic Drift. Todos los derechos reservados.</p>
+    </footer>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script src="/src/script.js"></script>
+    <script src="/src/letter.js"></script>
+</body>
+</html>

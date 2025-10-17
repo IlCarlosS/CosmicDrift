@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="img/favicon_io/favicon.ico">
+    <title>Cosmic Drift - Bitácora Estelar</title>
+    <link rel="stylesheet" href="src/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="logo">COSMIC DRIFT</div>
+        <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-menu-2"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 6l16 0" /><path d="M4 12l16 0" /><path d="M4 18l16 0" /></svg>
+        </button>
+        <nav class="navbar" id="main-navbar">
+            <ul>
+                <li><a href="index.html">INICIO</a></li>
+                <li><a href="articulos.html">BITÁCORA ESTELAR</a></li>
+                <li><a href="galeria.html">GALERÍA</a></li>
+                <li><a href="flujodatos.html">FLUJO DE DATOS</a></li>
+                <li><a href="comunidad.html">COMUNIDAD</a></li>
+                <li><a href="manifiesto.html">MANIFIESTO</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="gallery-hero-section">
+            <h1 class="ml11">
+                <span class="text-wrapper">
+                    <span class="line line1"></span>
+                    <span class="letters">BITÁCORA ESTELAR</span>
+                </span>
+            </h1>
+            <p>Revisa las Noticias Estelares.</p>
+        </section>
+
+        <section class="articles-grid-section">
+            <div class="articles-grid-container">
+        
+                <a href="#" class="article-item featured-main" data-category="Destacado">
+                    <img src="img/articulos/markus-spiske-iar-afB0QQw-unsplash.webp" alt="Codigo" loading="lazy">
+                    <div class="article-info">
+                        <span class="article-category">ANÁLISIS DE DATOS</span>
+                        <h3>El Vacío es un Código: Descifrando la señal 0XF5 en la Nube de Oort.</h3>
+                        <p class="article-excerpt">Nuestros astrónomos han detectado una señal recurrente, no natural, que desafía las leyes conocidas de la física. Exploramos su origen y potencial significado...</p>
+                    </div>
+                </a>
+                
+                <a href="#" class="article-item featured-secondary" data-category="Exploración">
+                    <img src="img/articulos/cdc-QEU-QgIOJKA-unsplash.webp" alt="microbiana" loading="lazy">
+                    <div class="article-info">
+                        <span class="article-category">EXPEDICIÓN</span>
+                        <h3>El Nuevo Horizonte: La vida microbiana hallada en Exo-Planeta T-12.</h3>
+                    </div>
+                </a>
+                
+                <a href="#" class="article-item featured-secondary" data-category="Tecnología">
+                    <img src="img/articulos/igor-omilaev-gVQLAbGVB6Q-unsplash.webp" alt="ia" loading="lazy">
+                    <div class="article-info">
+                        <span class="article-category">TECNOLOGÍA</span>
+                        <h3>La nueva IA Cuántica, ¿El fin de la necesidad de tripulación humana?</h3>
+                    </div>
+                </a>
+
+                <a href="#" class="article-item featured-secondary" data-category="Tecnología">
+                    <img src="img/articulos/stephan-widua-3YAIvBNlZM4-unsplash.webp" alt="Telescopio" loading="lazy">
+                    <div class="article-info">
+                        <span class="article-category">TECNOLOGÍA</span>
+                        <h3>El Ojo del Telescopio Webb: Revelando el 'Jardín Escondido' de la Nebulosa de Carina.</h3>
+                    </div>
+                </a>
+
+                <a href="#" class="article-item featured-secondary" data-category="Exploracion">
+                    <img src="img/articulos/daniele-colucci-OtXJhYjbKeg-unsplash.webp" alt="superficie de marte" loading="lazy">
+                    <div class="article-info">
+                        <span class="article-category">EXPEDICIÓN</span>
+                        <h3>Los Archivos Perdidos de Marte: Evidencia geológica de un antiguo océano subsuperficial.</h3>
+                    </div>
+                </a>
+                
+                <div class="article-strip-container">
+                    <h3 class="strip-title">CRÓNICAS RECIENTES</h3>
+                    <a href="#" class="strip-item">
+                        <span class="strip-category">Política</span>
+                        <p class="strip-headline">El Senado Galáctico debate la regulación de la tecnología de invisibilidad.</p>
+                        <span class="strip-date">02.11.3305</span>
+                    </a>
+                    <a href="#" class="strip-item">
+                        <span class="strip-category">Descubrimiento</span>
+                        <p class="strip-headline">Un nuevo tipo de materia oscura detectada cerca de Cygnus X-1.</p>
+                        <span class="strip-date">01.11.3305</span>
+                    </a>
+                    <a href="#" class="strip-item">
+                        <span class="strip-category">Misiones</span>
+                        <p class="strip-headline">Fase Alpha completada: Sonda D-90 entra en hibernación profunda.</p>
+                        <span class="strip-date">31.10.3305</span>
+                    </a>
+                    <a href="#" class="strip-item">
+                        <span class="strip-category">Tecnología</span>
+                        <p class="strip-headline">Avance en fusión fría: El reactor A-10 logra 72 horas de operación continua.</p>
+                        <span class="strip-date">28.10.3305</span>
+                    </a>
+                    <a href="#" class="strip-item">
+                        <span class="strip-category">Exploración</span>
+                        <p class="strip-headline">Se confirma la presencia de agua líquida bajo la superficie de Europa I.</p>
+                        <span class="strip-date">24.10.3305</span>
+                    </a>
+                    <a href="#" class="strip-item">
+                        <span class="strip-category">Cultura</span>
+                        <p class="strip-headline">El "Festival Galáctico de la Luz" inicia en la estación orbital L-5; se esperan 1M de visitantes..</p>
+                        <span class="strip-date">17.10.3305</span>
+                    </a>
+                </div>
+                
+                <a href="#" class="article-item" data-category="Miscelánea">
+                    <img src="img/articulos/julien-tromeur-EOSHmMbjT8g-unsplash.webp" alt="Arte conceptual de nave" loading="lazy">
+                    <div class="article-info">
+                        <span class="article-category">CULTURA</span>
+                        <h3>Los mejores videojuegos de simulación espacial del milenio.</h3>
+                    </div>
+                </a>
+
+                <a href="#" class="article-item" data-category="Historia">
+                    <img src="img/articulos/elimende-inagella-7OxV_qDiGRI-unsplash.webp" alt="Explorador en planeta" loading="lazy">
+                    <div class="article-info">
+                        <span class="article-category">HISTORIA</span>
+                        <h3>El Colapso de la Antigua Federación: Lecciones para la Deriva Actual.</h3>
+                    </div>
+                </a>
+
+                <a href="#" class="article-item" data-category="Miscelánea">
+                    <img src="img/articulos/christian-englmeier-J7EUjSlNQtg-unsplash.webp" alt="Explorador en planeta" loading="lazy">
+                    <div class="article-info">
+                        <span class="article-category">CULTURA</span>
+                        <h3>Viaje a Distorsión: La verdad (y el peligro) detrás del concepto Alcubierre.</h3>
+                    </div>
+                </a>
+
+                <a href="#" class="article-item featured-secondary" data-category="Exploración">
+                    <img src="img/articulos/aleksei-sabulevskii-14BHYPL4AqQ-unsplash.webp" alt="Explorador en planeta" loading="lazy">
+                    <div class="article-info">
+                        <span class="article-category">EXPEDICIÓN</span>
+                        <h3>Rendición de Cuentas: ¿Por qué la Humanidad necesita colonizar el cinturón de asteroides?</h3>
+                    </div>
+                </a>
+
+                <a href="#" class="article-item featured-main" data-category="Destacado">
+                    <img src="img/articulos/nasa-hubble-space-telescope-KhHzXMncuTM-unsplash.webp" alt="Agujero negro y nave espacial" loading="lazy">
+                    <div class="article-info">
+                        <span class="article-category">ANÁLISIS DE DATOS</span>
+                        <h3>Cronología del Big Rip: ¿Cuándo y cómo terminará la expansión del universo?</h3>
+                    </div>
+                </a>
+                
+                </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="footer-content">
+            <div class="logo">COSMIC DRIFT</div>
+            <nav class="footer-navbar">
+                <ul>
+                    <li><a href="index.html">INICIO</a></li>
+                    <li><a href="articulos.html">BITÁCORA ESTELAR</a></li>
+                    <li><a href="galeria.html">GALERÍA</a></li>
+                    <li><a href="flujodatos.html">FLUJO DE DATOS</a></li>
+                    <li><a href="comunidad.html">COMUNIDAD</a></li>
+                    <li><a href="manifiesto.html">MANIFIESTO</a></li>
+                </ul>
+            </nav>
+            <div class="ufo-animation-container">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-ufo footer-ufo-icon"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M16.95 9.01c3.02 .739 5.05 2.123 5.05 3.714c0 2.367 -4.48 4.276 -10 4.276s-10 -1.909 -10 -4.276c0 -1.59 2.04 -2.985 5.07 -3.724" /><path d="M7 9c0 1.105 2.239 2 5 2s5 -.895 5 -2v-.035c0 -2.742 -2.239 -4.965 -5 -4.965s-5 2.223 -5 4.965v.035" /><path d="M15 17l2 3" /><path d="M8.5 17l-1.5 3" /><path d="M12 14h.01" /><path d="M7 13h.01" /><path d="M17 13h.01" /></svg>
+            </div>
+        </div>
+        <p class="footer-copy">&copy; 3305 Cosmic Drift. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script src="src/script.js"></script>
+    <script src="src/letter.js"></script>
+</body>
+</html>

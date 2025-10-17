@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="img/favicon_io/favicon.ico">
+    <title>Cosmic Drift - Comunidad</title>
+    <link rel="stylesheet" href="src/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="logo">COSMIC DRIFT</div>
+        <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-menu-2"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 6l16 0" /><path d="M4 12l16 0" /><path d="M4 18l16 0" /></svg>
+        </button>
+        <nav class="navbar" id="main-navbar">
+            <ul>
+                <li><a href="index.html">INICIO</a></li>
+                <li><a href="articulos.html">BITÁCORA ESTELAR</a></li>
+                <li><a href="galeria.html">GALERÍA</a></li>
+                <li><a href="flujodatos.html">FLUJO DE DATOS</a></li>
+                <li><a href="comunidad.html">COMUNIDAD</a></li>
+                <li><a href="manifiesto.html">MANIFIESTO</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="gallery-hero-section">
+            <h1 class="ml11">
+                <span class="text-wrapper">
+                    <span class="line line1"></span>
+                    <span class="letters">COMUNIDAD</span>
+                </span>
+            </h1>
+            <p>Únete a la Tripulación Cósmica.</p>
+        </section>
+
+        <section class="forum-main-container">
+            <!-- COLUMNA PRINCIPAL (Tópicos Populares) -->
+            <div class="forum-discussion-list">
+                <div class="list-header">
+                    <h2>Tópicos Recientes y Populares</h2>
+                    <button class="btn-primary">INICIAR NUEVA DISCUSIÓN</button>
+                </div>
+                <div class="topics-feed">
+                    <!-- Tópico 1 -->
+                    <a href="#" class="topic-card">
+                        <div class="topic-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-comet"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M15.5 18.5l-3 1.5l.5 -3.5l-2 -2l3 -.5l1.5 -3l1.5 3l3 .5l-2 2l.5 3.5z" /><path d="M4 4l7 7" /><path d="M9 4l3.5 3.5" /><path d="M4 9l3.5 3.5" /></svg>
+                        </div>
+                        <div class="topic-main-info">
+                            <h3 class="topic-title">¿Es viable la propulsión por agujeros de gusano?</h3>
+                            <p class="topic-meta">
+                                <span class="topic-author">Autor: AstroFan99</span>
+                                <span class="topic-date">Fecha: 24.10.3305</span>
+                            </p>
+                        </div>
+                        <div class="topic-comments">
+                            <div class="comments-count">14</div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-messages"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M21 14l-3 -3h-7a1 1 0 0 1 -1 -1v-6a1 1 0 0 1 1 -1h9a1 1 0 0 1 1 1v10" /><path d="M14 15v2a1 1 0 0 1 -1 1h-7l-3 3v-10a1 1 0 0 1 1 -1h2" /></svg>
+                        </div>
+                    </a>
+                    <!-- Tópico 2 -->
+                    <a href="#" class="topic-card">
+                        <div class="topic-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-planet"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18.816 13.585c-.328 1.488 -.844 2.871 -1.537 4.102c-1.282 2.296 -3.078 4.092 -5.259 4.908c-2.18 -.816 -3.977 -2.612 -5.259 -4.908c-.693 -1.231 -1.209 -2.614 -1.537 -4.102" /><path d="M4.184 10.415c.328 -1.488 .844 -2.871 1.537 -4.102c1.282 -2.296 3.078 -4.092 5.259 -4.908c2.18 .816 3.977 2.612 5.259 4.908c.693 1.231 1.209 2.614 1.537 4.102" /><path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" /><path d="M12 12m-4 0a4 4 0 1 0 8 0a4 4 0 1 0 -8 0" /></svg>
+                        </div>
+                        <div class="topic-main-info">
+                            <h3 class="topic-title">Reporte de fallas en el Sector Beta 7: ¿Bug o anomalía gravitatoria?</h3>
+                            <p class="topic-meta">
+                                <span class="topic-author">Autor: Sentinel_Prime</span>
+                                <span class="topic-date">Fecha: 23.10.3305</span>
+                            </p>
+                        </div>
+                        <div class="topic-comments">
+                            <div class="comments-count">48</div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-messages"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M21 14l-3 -3h-7a1 1 0 0 1 -1 -1v-6a1 1 0 0 1 1 -1h9a1 1 0 0 1 1 1v10" /><path d="M14 15v2a1 1 0 0 1 -1 1h-7l-3 3v-10a1 1 0 0 1 1 -1h2" /></svg>
+                        </div>
+                    </a>
+                    <!-- Tópico 3 -->
+                    <a href="#" class="topic-card">
+                        <div class="topic-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-dna"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 3l4 8l-4 8" /><path d="M20 3l-4 8l4 8" /><path d="M7 21l10 -18" /><path d="M13 21l-10 -18" /><path d="M10 21l2 -4" /><path d="M12 7l-2 -4" /></svg>
+                        </div>
+                        <div class="topic-main-info">
+                            <h3 class="topic-title">La ética de la modificación genética en la exploración de exoplanetas.</h3>
+                            <p class="topic-meta">
+                                <span class="topic-author">Autor: Dr. Elysium</span>
+                                <span class="topic-date">Fecha: 22.10.3305</span>
+                            </p>
+                        </div>
+                        <div class="topic-comments">
+                            <div class="comments-count">78</div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-messages"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M21 14l-3 -3h-7a1 1 0 0 1 -1 -1v-6a1 1 0 0 1 1 -1h9a1 1 0 0 1 1 1v10" /><path d="M14 15v2a1 1 0 0 1 -1 1h-7l-3 3v-10a1 1 0 0 1 1 -1h2" /></svg>
+                        </div>
+                    </a>
+                    <!-- Tópico 4 -->
+                    <a href="#" class="topic-card">
+                        <div class="topic-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-comet"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M15.5 18.5l-3 1.5l.5 -3.5l-2 -2l3 -.5l1.5 -3l1.5 3l3 .5l-2 2l.5 3.5z" /><path d="M4 4l7 7" /><path d="M9 4l3.5 3.5" /><path d="M4 9l3.5 3.5" /></svg>
+                        </div>
+                        <div class="topic-main-info">
+                            <h3 class="topic-title"> El Verdadero Color de las Nebulosas: ¿Arte o Ciencia?</h3>
+                            <p class="topic-meta">
+                                <span class="topic-author">Autor: NebulaHunter</span>
+                                <span class="topic-date">Fecha: 25.09.3305	</span>
+                            </p>
+                        </div>
+                        <div class="topic-comments">
+                            <div class="comments-count">31</div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-messages"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M21 14l-3 -3h-7a1 1 0 0 1 -1 -1v-6a1 1 0 0 1 1 -1h9a1 1 0 0 1 1 1v10" /><path d="M14 15v2a1 1 0 0 1 -1 1h-7l-3 3v-10a1 1 0 0 1 1 -1h2" /></svg>
+                        </div>
+                    </a>
+                    <!-- Tópico 5 -->
+                    <a href="#" class="topic-card">
+                        <div class="topic-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-planet"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18.816 13.585c-.328 1.488 -.844 2.871 -1.537 4.102c-1.282 2.296 -3.078 4.092 -5.259 4.908c-2.18 -.816 -3.977 -2.612 -5.259 -4.908c-.693 -1.231 -1.209 -2.614 -1.537 -4.102" /><path d="M4.184 10.415c.328 -1.488 .844 -2.871 1.537 -4.102c1.282 -2.296 3.078 -4.092 5.259 -4.908c2.18 .816 3.977 2.612 5.259 4.908c.693 1.231 1.209 2.614 1.537 4.102" /><path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" /><path d="M12 12m-4 0a4 4 0 1 0 8 0a4 4 0 1 0 -8 0" /></svg>
+                        </div>
+                        <div class="topic-main-info">
+                            <h3 class="topic-title">Requisitos de Hardware para Correr el Universo 4.0</h3>
+                            <p class="topic-meta">
+                                <span class="topic-author">Autor: Core_i9_Zeta</span>
+                                <span class="topic-date">Fecha: 02.10.3305</span>
+                            </p>
+                        </div>
+                        <div class="topic-comments">
+                            <div class="comments-count">55</div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-messages"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M21 14l-3 -3h-7a1 1 0 0 1 -1 -1v-6a1 1 0 0 1 1 -1h9a1 1 0 0 1 1 1v10" /><path d="M14 15v2a1 1 0 0 1 -1 1h-7l-3 3v-10a1 1 0 0 1 1 -1h2" /></svg>
+                        </div>
+                    </a>
+                    <!-- Tópico 6 -->
+                    <a href="#" class="topic-card">
+                        <div class="topic-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-dna"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 3l4 8l-4 8" /><path d="M20 3l-4 8l4 8" /><path d="M7 21l10 -18" /><path d="M13 21l-10 -18" /><path d="M10 21l2 -4" /><path d="M12 7l-2 -4" /></svg>
+                        </div>
+                        <div class="topic-main-info">
+                            <h3 class="topic-title">¿Alguien más capta interferencias de radiofrecuencia desde Kepler-186f?</h3>
+                            <p class="topic-meta">
+                                <span class="topic-author">Autor: Dr. Elysium</span>
+                                <span class="topic-date">Fecha: 20.09.3305</span>
+                            </p>
+                        </div>
+                        <div class="topic-comments">
+                            <div class="comments-count">17</div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-messages"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M21 14l-3 -3h-7a1 1 0 0 1 -1 -1v-6a1 1 0 0 1 1 -1h9a1 1 0 0 1 1 1v10" /><path d="M14 15v2a1 1 0 0 1 -1 1h-7l-3 3v-10a1 1 0 0 1 1 -1h2" /></svg>
+                        </div>
+                    </a>
+                    <!-- Tópico 7 -->
+                    <a href="#" class="topic-card">
+                        <div class="topic-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-comet"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M15.5 18.5l-3 1.5l.5 -3.5l-2 -2l3 -.5l1.5 -3l1.5 3l3 .5l-2 2l.5 3.5z" /><path d="M4 4l7 7" /><path d="M9 4l3.5 3.5" /><path d="M4 9l3.5 3.5" /></svg>
+                        </div>
+                        <div class="topic-main-info">
+                            <h3 class="topic-title"> Diseño de Interiores de Naves: Menos metal, más bio-luminescencia.</h3>
+                            <p class="topic-meta">
+                                <span class="topic-author">Autor: V_Aesthetics</span>
+                                <span class="topic-date">Fecha: 17.09.3305</span>
+                            </p>
+                        </div>
+                        <div class="topic-comments">
+                            <div class="comments-count">64</div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-messages"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M21 14l-3 -3h-7a1 1 0 0 1 -1 -1v-6a1 1 0 0 1 1 -1h9a1 1 0 0 1 1 1v10" /><path d="M14 15v2a1 1 0 0 1 -1 1h-7l-3 3v-10a1 1 0 0 1 1 -1h2" /></svg>
+                        </div>
+                    </a>
+                    <!-- Tópico 8 -->
+                    <a href="#" class="topic-card">
+                        <div class="topic-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-planet"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18.816 13.585c-.328 1.488 -.844 2.871 -1.537 4.102c-1.282 2.296 -3.078 4.092 -5.259 4.908c-2.18 -.816 -3.977 -2.612 -5.259 -4.908c-.693 -1.231 -1.209 -2.614 -1.537 -4.102" /><path d="M4.184 10.415c.328 -1.488 .844 -2.871 1.537 -4.102c1.282 -2.296 3.078 -4.092 5.259 -4.908c2.18 .816 3.977 2.612 5.259 4.908c.693 1.231 1.209 2.614 1.537 4.102" /><path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" /><path d="M12 12m-4 0a4 4 0 1 0 8 0a4 4 0 1 0 -8 0" /></svg>
+                        </div>
+                        <div class="topic-main-info">
+                            <h3 class="topic-title">Debate: ¿Son los robots de terraformación una forma de vida artificial?</h3>
+                            <p class="topic-meta">
+                                <span class="topic-author">Autor: BioEthicist</span>
+                                <span class="topic-date">Fecha: 03.10.3305</span>
+                            </p>
+                        </div>
+                        <div class="topic-comments">
+                            <div class="comments-count">70</div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-messages"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M21 14l-3 -3h-7a1 1 0 0 1 -1 -1v-6a1 1 0 0 1 1 -1h9a1 1 0 0 1 1 1v10" /><path d="M14 15v2a1 1 0 0 1 -1 1h-7l-3 3v-10a1 1 0 0 1 1 -1h2" /></svg>
+                        </div>
+                    </a>
+                    <!-- Tópico 9 -->
+                    <a href="#" class="topic-card">
+                        <div class="topic-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-dna"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 3l4 8l-4 8" /><path d="M20 3l-4 8l4 8" /><path d="M7 21l10 -18" /><path d="M13 21l-10 -18" /><path d="M10 21l2 -4" /><path d="M12 7l-2 -4" /></svg>
+                        </div>
+                        <div class="topic-main-info">
+                            <h3 class="topic-title">Consejos de navegación para evitar la piratería en los Cinturones de Kuiper.</h3>
+                            <p class="topic-meta">
+                                <span class="topic-author">Autor: Myth_Teller</span>
+                                <span class="topic-date">Fecha: 07.10.3305</span>
+                            </p>
+                        </div>
+                        <div class="topic-comments">
+                            <div class="comments-count">48</div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-messages"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M21 14l-3 -3h-7a1 1 0 0 1 -1 -1v-6a1 1 0 0 1 1 -1h9a1 1 0 0 1 1 1v10" /><path d="M14 15v2a1 1 0 0 1 -1 1h-7l-3 3v-10a1 1 0 0 1 1 -1h2" /></svg>
+                        </div>
+                    </a>
+                    <!-- Tópico 10 -->
+                    <a href="#" class="topic-card">
+                        <div class="topic-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-comet"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M15.5 18.5l-3 1.5l.5 -3.5l-2 -2l3 -.5l1.5 -3l1.5 3l3 .5l-2 2l.5 3.5z" /><path d="M4 4l7 7" /><path d="M9 4l3.5 3.5" /><path d="M4 9l3.5 3.5" /></svg>
+                        </div>
+                        <div class="topic-main-info">
+                            <h3 class="topic-title">La Leyenda del Planeta Fantasma: El que solo aparece en el solsticio galáctico.</h3>
+                            <p class="topic-meta">
+                                <span class="topic-author">Autor: Myth_Teller</span>
+                                <span class="topic-date">Fecha: 10.10.3305</span>
+                            </p>
+                        </div>
+                        <div class="topic-comments">
+                            <div class="comments-count">78</div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-messages"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M21 14l-3 -3h-7a1 1 0 0 1 -1 -1v-6a1 1 0 0 1 1 -1h9a1 1 0 0 1 1 1v10" /><path d="M14 15v2a1 1 0 0 1 -1 1h-7l-3 3v-10a1 1 0 0 1 1 -1h2" /></svg>
+                        </div>
+                    </a>
+                    <!-- Tópico 11 -->
+                    <a href="#" class="topic-card">
+                        <div class="topic-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-planet"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18.816 13.585c-.328 1.488 -.844 2.871 -1.537 4.102c-1.282 2.296 -3.078 4.092 -5.259 4.908c-2.18 -.816 -3.977 -2.612 -5.259 -4.908c-.693 -1.231 -1.209 -2.614 -1.537 -4.102" /><path d="M4.184 10.415c.328 -1.488 .844 -2.871 1.537 -4.102c1.282 -2.296 3.078 -4.092 5.259 -4.908c2.18 .816 3.977 2.612 5.259 4.908c.693 1.231 1.209 2.614 1.537 4.102" /><path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" /><path d="M12 12m-4 0a4 4 0 1 0 8 0a4 4 0 1 0 -8 0" /></svg>
+                        </div>
+                        <div class="topic-main-info">
+                            <h3 class="topic-title">¿Por qué la Unidad de Tiempo 3305 es tan inestable? El Gran Glitch.</h3>
+                            <p class="topic-meta">
+                                <span class="topic-author">Autor: LexicoPrime</span>
+                                <span class="topic-date">Fecha: 30.09.3305</span>
+                            </p>
+                        </div>
+                        <div class="topic-comments">
+                            <div class="comments-count">83</div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-messages"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M21 14l-3 -3h-7a1 1 0 0 1 -1 -1v-6a1 1 0 0 1 1 -1h9a1 1 0 0 1 1 1v10" /><path d="M14 15v2a1 1 0 0 1 -1 1h-7l-3 3v-10a1 1 0 0 1 1 -1h2" /></svg>
+                        </div>
+                    </a>
+                    <!-- Tópico 12 -->
+                    <a href="#" class="topic-card">
+                        <div class="topic-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-dna"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 3l4 8l-4 8" /><path d="M20 3l-4 8l4 8" /><path d="M7 21l10 -18" /><path d="M13 21l-10 -18" /><path d="M10 21l2 -4" /><path d="M12 7l-2 -4" /></svg>
+                        </div>
+                        <div class="topic-main-info">
+                            <h3 class="topic-title">¿Cuál es el sonido real de un viaje a velocidad warp? Teorías auditivas.</h3>
+                            <p class="topic-meta">
+                                <span class="topic-author">Autor: Dr. Calypso</span>
+                                <span class="topic-date">Fecha: 13.10.3305</span>
+                            </p>
+                        </div>
+                        <div class="topic-comments">
+                            <div class="comments-count">60</div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-messages"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M21 14l-3 -3h-7a1 1 0 0 1 -1 -1v-6a1 1 0 0 1 1 -1h9a1 1 0 0 1 1 1v10" /><path d="M14 15v2a1 1 0 0 1 -1 1h-7l-3 3v-10a1 1 0 0 1 1 -1h2" /></svg>
+                        </div>
+                    </a>
+                    <!-- Tópico 13 -->
+                    <a href="#" class="topic-card">
+                        <div class="topic-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-comet"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M15.5 18.5l-3 1.5l.5 -3.5l-2 -2l3 -.5l1.5 -3l1.5 3l3 .5l-2 2l.5 3.5z" /><path d="M4 4l7 7" /><path d="M9 4l3.5 3.5" /><path d="M4 9l3.5 3.5" /></svg>
+                        </div>
+                        <div class="topic-main-info">
+                            <h3 class="topic-title">El síndrome del ‘Horizonte de Sucesos’: Cómo superar la claustrofobia estelar.</h3>
+                            <p class="topic-meta">
+                                <span class="topic-author">Autor: XenoDrifter</span>
+                                <span class="topic-date">Fecha: 22.10.3305</span>
+                            </p>
+                        </div>
+                        <div class="topic-comments">
+                            <div class="comments-count">60</div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-messages"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M21 14l-3 -3h-7a1 1 0 0 1 -1 -1v-6a1 1 0 0 1 1 -1h9a1 1 0 0 1 1 1v10" /><path d="M14 15v2a1 1 0 0 1 -1 1h-7l-3 3v-10a1 1 0 0 1 1 -1h2" /></svg>
+                        </div>
+                    </a>
+                    <!-- Tópico 14 -->
+                    <a href="#" class="topic-card">
+                        <div class="topic-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-planet"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18.816 13.585c-.328 1.488 -.844 2.871 -1.537 4.102c-1.282 2.296 -3.078 4.092 -5.259 4.908c-2.18 -.816 -3.977 -2.612 -5.259 -4.908c-.693 -1.231 -1.209 -2.614 -1.537 -4.102" /><path d="M4.184 10.415c.328 -1.488 .844 -2.871 1.537 -4.102c1.282 -2.296 3.078 -4.092 5.259 -4.908c2.18 .816 3.977 2.612 5.259 4.908c.693 1.231 1.209 2.614 1.537 4.102" /><path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" /><path d="M12 12m-4 0a4 4 0 1 0 8 0a4 4 0 1 0 -8 0" /></svg>
+                        </div>
+                        <div class="topic-main-info">
+                            <h3 class="topic-title">Guía de Comercio: Métodos más seguros para el trueque de raros gases de Júpiter.</h3>
+                            <p class="topic-meta">
+                                <span class="topic-author">Autor: SmugglerX</span>
+                                <span class="topic-date">Fecha: 01.10.3305</span>
+                            </p>
+                        </div>
+                        <div class="topic-comments">
+                            <div class="comments-count">79</div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-messages"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M21 14l-3 -3h-7a1 1 0 0 1 -1 -1v-6a1 1 0 0 1 1 -1h9a1 1 0 0 1 1 1v10" /><path d="M14 15v2a1 1 0 0 1 -1 1h-7l-3 3v-10a1 1 0 0 1 1 -1h2" /></svg>
+                        </div>
+                    </a>
+                    
+                </div>
+
+                <div class="forum-pagination">
+                    <a href="#" class="page-link prev disabled" aria-disabled="true">&laquo; Anterior</a>
+                    <a href="#" class="page-link active">1</a>
+                    <a href="#" class="page-link">2</a>
+                    <a href="#" class="page-link">3</a>
+                    <span class="ellipsis">...</span>
+                    <a href="#" class="page-link">10</a>
+                    <a href="#" class="page-link next">Siguiente &raquo;</a>
+                </div>
+            </div>
+            
+            <!-- SIDEBAR (Sugerencias/Tendencias) -->
+            <div class="forum-sidebar">
+                
+                <!-- Widget de Tendencias -->
+                <div class="sidebar-widget trending-widget">
+                    <h3>TENDENCIAS DE LA SEMANA</h3>
+                    <ul>
+                        <li><a href="#">#FallaGravitatoriaBeta7</a> (2.5K Posts)</li>
+                        <li><a href="#">#DebateWormhole</a> (1.8K Posts)</li>
+                        <li><a href="#">#NuevoFlujoDatos</a> (902 Posts)</li>
+                        <li><a href="#">#ManifiestoV2</a> (350 Posts)</li>
+                        <li><a href="#">#KeplerInterferencias</a> (1.5K Posts)</li>
+                        <li><a href="#">#VidaEnExoplanetas</a> (1.1K Posts)</li>
+                        <li><a href="#">#ComercioDeObjetosRaros</a> (512 Posts)</li>
+                    </ul>
+                </div>
+                
+                <!-- Widget de Subcomunidades -->
+                <div class="sidebar-widget subcommunity-widget">
+                    <h3>SUBCOMUNIDADES</h3>
+                    <a href="#" class="subcommunity-item">
+                        <div class="sub-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-flask"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 3c0 4.148 -1.493 6.444 -3.75 8.718c-1.034 1.054 -1.25 2.215 -1.25 3.282c0 2.5 2 4 5 4s5 -1.5 5 -4c0 -1.067 -.216 -2.228 -1.25 -3.282c-2.257 -2.274 -3.75 -4.57 -3.75 -8.718" /><path d="M4 19h16" /></svg></div>
+                        <div class="sub-info">
+                            <h4>Mecánica Warp</h4>
+                            <p>5.2K miembros</p>
+                        </div>
+                    </a>
+                    <a href="#" class="subcommunity-item">
+                        <div class="sub-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-bug"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 9v-1a3 3 0 0 1 6 0v1" /><path d="M8 9h8a6 6 0 0 1 1 3v3a5 5 0 0 1 -10 0v-3a6 6 0 0 1 1 -3" /><path d="M12 20l0 1" /><path d="M18 12l.01 0" /><path d="M6 12l.01 0" /></svg></div>
+                        <div class="sub-info">
+                            <h4>Xeno-Biología</h4>
+                            <p>3.1K miembros</p>
+                        </div>
+                    </a>
+                    <a href="#" class="subcommunity-item">
+                        <div class="sub-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-rocket"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 13a8 8 0 0 1 7 7a6 6 0 0 0 3 -5a9 9 0 0 0 6 -8a3 3 0 0 0 -3 -3a9 9 0 0 0 -8 6a6 6 0 0 0 -5 3" /><path d="M7 14a6 6 0 0 0 -3 6a6 6 0 0 0 6 -3" /><path d="M15 9m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" /></svg>
+                        </div>
+                        <div class="sub-info">
+                            <h4>Artesanía de Propulsores (Aeroespacial)</h4>
+                            <p>7.9K miembros</p>
+                        </div>
+                    </a>
+                    <a href="#" class="subcommunity-item">
+                        <div class="sub-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-map-route"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 7l6 -3l6 3l6 -3v13l-6 3l-6 -3l-6 3v-13" /><path d="M9 12v.01" /><path d="M6 13v.01" /><path d="M17 15l-4 -4" /><path d="M13 15l4 -4" /></svg>
+                        </div>
+                        <div class="sub-info">
+                            <h4>Cartografía y Rutas Estelares</h4>
+                            <p>4.4K miembros</p>
+                        </div>
+                    </a>
+                    <a href="#" class="subcommunity-item">
+                        <div class="sub-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-lemon"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M17.536 3.393c3.905 3.906 3.905 10.237 0 14.143c-3.906 3.905 -10.237 3.905 -14.143 0l14.143 -14.143" /><path d="M5.868 15.06a6.5 6.5 0 0 0 9.193 -9.192" /><path d="M10.464 10.464l4.597 4.597" /><path d="M10.464 10.464v6.364" /><path d="M10.464 10.464h6.364" /></svg>
+                        </div>
+                        <div class="sub-info">
+                            <h4>Personas que han visto un limón flotando en el espacio</h4>
+                            <p>2.2K miembros</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="footer-content">
+            <div class="logo">COSMIC DRIFT</div>
+            <nav class="footer-navbar">
+                <ul>
+                    <li><a href="index.html">INICIO</a></li>
+                    <li><a href="articulos.html">BITÁCORA ESTELAR</a></li>
+                    <li><a href="galeria.html">GALERÍA</a></li>
+                    <li><a href="flujodatos.html">FLUJO DE DATOS</a></li>
+                    <li><a href="comunidad.html">COMUNIDAD</a></li>
+                    <li><a href="manifiesto.html">MANIFIESTO</a></li>
+                </ul>
+            </nav>
+            <div class="ufo-animation-container">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-ufo footer-ufo-icon"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M16.95 9.01c3.02 .739 5.05 2.123 5.05 3.714c0 2.367 -4.48 4.276 -10 4.276s-10 -1.909 -10 -4.276c0 -1.59 2.04 -2.985 5.07 -3.724" /><path d="M7 9c0 1.105 2.239 2 5 2s5 -.895 5 -2v-.035c0 -2.742 -2.239 -4.965 -5 -4.965s-5 2.223 -5 4.965v.035" /><path d="M15 17l2 3" /><path d="M8.5 17l-1.5 3" /><path d="M12 14h.01" /><path d="M7 13h.01" /><path d="M17 13h.01" /></svg>
+            </div>
+        </div>
+        <p class="footer-copy">&copy; 3305 Cosmic Drift. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script src="src/script.js"></script>
+    <script src="src/letter.js"></script>
+</body>
+</html>
