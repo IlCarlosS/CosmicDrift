@@ -87,6 +87,9 @@ function updatePlayer() {
 // Eventos de teclado
 document.addEventListener('keydown', e => {
   keys[e.key] = true;
+  if (['ArrowLeft', 'ArrowRight', 'ArrowUp', 'ArrowDown'].includes(e.key)) {
+    e.preventDefault();
+  }
   if (e.key.toLowerCase() === 'z') shoot();
 });
 document.addEventListener('keyup', e => {
@@ -110,7 +113,6 @@ function shoot() {
 let enemyDirection = 1; // 1 = derecha, -1 = izquierda
 function updateEnemies() {
   let edgeReached = false;
-
   enemies.forEach(enemy => {
     if (enemy.alive) {
       enemy.x += enemyDirection * 0.5;
@@ -120,7 +122,6 @@ function updateEnemies() {
       }
     }
   });
-
   if (edgeReached) {
     enemyDirection *= -1;
     enemies.forEach(enemy => {
@@ -134,7 +135,6 @@ function updateEnemies() {
 let enemyBullets = [];
 let lastEnemyShot = 0;
 const enemyShotCooldown = 400;
-
 function enemyShoot() {
   const now = Date.now();
   if (now - lastEnemyShot >= enemyShotCooldown) {
@@ -255,6 +255,8 @@ function gameLoop() {
 }
 
 // Iniciar juego
+// canvas.setAttribute('tabindex', '0');
+// canvas.focus();
 let gameStarted = false;
 canvas.addEventListener('click', () => {
   if (gameState === 'idle') {
@@ -273,4 +275,5 @@ function startGame() {
   spawnEnemies();
   bgMusic.play();
   gameLoop();
+  // canvas.focus();
 }
