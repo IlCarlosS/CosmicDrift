@@ -259,6 +259,8 @@ function gameLoop() {
 // canvas.focus();
 let gameStarted = false;
 canvas.addEventListener('click', () => {
+  if (isMobile) return; // bloquea el juego en móviles
+
   if (gameState === 'idle') {
     gameStarted = true;
     startGame();
@@ -268,6 +270,24 @@ canvas.addEventListener('click', () => {
     document.location.reload();
   }
 });
+
+//detectar pantalla pequeña
+let isMobile = window.innerWidth < 768;
+if (isMobile) {
+  const canvas = document.getElementById('spaceCanvas');
+  const ctx = canvas.getContext('2d');
+  ctx.fillStyle = 'rgba(0, 0, 0, 0.85)';
+  ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+  ctx.fillStyle = '#FF0033';
+  ctx.font = 'bold 40px Space Mono';
+  ctx.textAlign = 'center';
+  ctx.fillText("Advertencia", canvas.width / 2, canvas.height / 2 - 40);
+
+  ctx.font = '40px Space Mono';
+  ctx.fillText("Terminal no está autorizado para defensa.", canvas.width / 2, canvas.height / 2);
+  ctx.fillText("Accede a un dispositivo completo.", canvas.width / 2, canvas.height / 2 + 30);
+}
 
 function startGame() {
   if (gameState !== 'idle') return;
