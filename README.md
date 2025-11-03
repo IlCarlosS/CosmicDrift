@@ -1,5 +1,5 @@
 # 🌌 COSMIC DRIFT -
-Estado del Proyecto: [Completado / En Desarrollo Activo / Versión 1.0.1]
+Estado del Proyecto: [Completado / En Desarrollo Activo]
 
 📝 Descripción del Proyecto
 Cosmic Drift es una maqueta de sitio web temática, diseñada para simular la interfaz de una bitácora de exploración espacial o un portal de información centrado en la ciencia ficción oscura y el terror cósmico. El proyecto se enfoca en demostrar habilidades de maquetación avanzada, diseño responsivo y el uso de animaciones sutiles y detalladas, manteniendo una estética de "Dark Futurism" con paletas de color neón y terminal.
@@ -24,7 +24,3 @@ Animaciones CSS.
 > CRÉDITOS_VISUALES_Y_MULTIMEDIA: Iconos: Tabler Icons (SVG). Imágenes: Todas las imágenes son cortesía de artistas y fotógrafos en Unsplash, que nos regalan su visión del cosmos. Música: The Grey Room, Density & Time, Golden Palms
 > DESARROLLADOR: Carlos Solis.
 > ASISTENCIA_CREATIVA: Gemini 2.5 Pro (Asistencia en Desarrollo, Estructura y Textos conceptuales).
-
-
-Licencia
-Consulta el archivo LICENSE.md para más detalles.
